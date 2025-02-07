@@ -23,7 +23,7 @@ public class AkakceSteps {
     }
 
     @When("Arama kutusuna {string} yazar ve aratır")
-    public void aramaYap(String searchText) {
+    public void aramaYap(String searchText) throws InterruptedException {
         homePage.searchProduct(searchText);
     }
 

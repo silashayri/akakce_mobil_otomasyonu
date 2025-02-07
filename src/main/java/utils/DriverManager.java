@@ -21,13 +21,15 @@ public class DriverManager {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("automationName", "UiAutomator2");
-        capabilities.setCapability("deviceName", "e1d6ccd2");
+        capabilities.setCapability("deviceName", "device");
         capabilities.setCapability("appPackage", "com.akakce.akakce");
-        capabilities.setCapability("appActivity", "com.akakce.akakce.ui.activity.MainActivity");
+        capabilities.setCapability("appActivity", "com.akakce.akakce.ui.splash.SplashActivity");
         capabilities.setCapability("noReset", false);
+        capabilities.setCapability("unicodeKeyboard", "true");
+        capabilities.setCapability("resetKeyboard", "true");
 
         try {
-            driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), capabilities);
+            driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }

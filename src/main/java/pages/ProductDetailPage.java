@@ -7,10 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProductDetailPage extends BasePage {
 
-    @AndroidFindBy(id = "com.akakce.akakce:id/goToProductButton")
+    @AndroidFindBy(id = "com.akakce.akakce:id/detailBtnLayout")
     private WebElement goToProductButton;
 
-    @AndroidFindBy(id = "com.akakce.akakce:id/goToSellerButton")
+    @AndroidFindBy(xpath = "//android.view.View[@content-desc=\"Satıcıya Git\"]/android.view.View")
     private WebElement goToSellerButton;
 
     public ProductDetailPage() {
