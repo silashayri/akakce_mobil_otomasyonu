@@ -1,12 +1,12 @@
 # Akakçe Mobile Test Automation Project
 
-Bu proje, Akakçe mobil uygulamasının otomatize testlerini içermektedir.
+This project contains automated tests for the Akakçe mobile application.
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
-- Java 11
-- Selenium WebDriver
-- Appium 2.0
-- Cucumber 7.x
-- TestNG
-- Maven
+- Java 11  
+- Selenium WebDriver  
+- Appium 2.0  
+- Cucumber 7.x  
+- TestNG  
+- Maven  
